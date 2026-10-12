@@ -1,0 +1,227 @@
+<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>טבלת החומרים</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap"><style>
+:root{--bg:#F7ECD7;--card:#FBF4E4;--fg:#27553F;--text:#3B3A30;--muted:#6C6A58;--line:#E2D2B2;--sage:#8DAE88;--sun:#E8962E;--alert:#B5502E;--alert-bg:#F6DFCB;--font:'Heebo','Arial Hebrew',Arial,sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1A2A22;--card:#233629;--fg:#B9D9B0;--text:#E8DFC6;--muted:#A9B59F;--line:#37503F;--sage:#6F9A72;--alert:#F0A27F;--alert-bg:#3B2A20;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1A2A22;--card:#233629;--fg:#B9D9B0;--text:#E8DFC6;--muted:#A9B59F;--line:#37503F;--sage:#6F9A72;--alert:#F0A27F;--alert-bg:#3B2A20;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:18px;line-height:1.65;direction:rtl;padding-inline:16px;padding-block:0 56px;margin:0}
+.wrap{max-width:820px;margin-inline:auto}
+a{color:inherit}
+a:focus-visible,summary:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+h1,h2,h3{font-family:var(--font);margin:0;text-wrap:balance;color:var(--fg);line-height:1.15}
+h2{font-weight:800;font-size:clamp(28px,6vw,38px);padding-bottom:12px;margin-bottom:20px;border-bottom:3px double var(--line)}
+.sub{color:var(--muted);margin:-6px 0 20px;max-width:36em}
+section{padding-block:44px 0;scroll-margin-top:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
+
+.wrap{padding-top:18px}
+.back{display:inline-block;text-decoration:none;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 16px;font-size:15px}
+.top{margin-top:16px}
+h1{font-weight:800;font-size:clamp(32px,8vw,48px);margin:0}
+.rule{height:2px;background:var(--line);margin:14px 0 16px}
+.banner{display:block;width:100%;height:190px;object-fit:cover;border-radius:18px;margin:18px 0 0}
+.alertbox{background:var(--alert-bg);border:1px solid var(--alert);border-radius:18px;padding:16px 22px;margin-top:18px}
+.alertbox strong{color:var(--alert)}
+.step{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 22px;margin-bottom:12px}
+.step h3{font-size:clamp(20px,4.6vw,24px);font-weight:800;margin-bottom:6px;display:flex;gap:10px;align-items:center}
+.step h3 i{flex:none;width:30px;height:30px;border-radius:50%;border:2px solid var(--sage);display:grid;place-items:center;font-style:normal;font-size:15px}
+.step p{margin:0 0 6px}.step ul{margin:6px 0 0;padding-inline-start:22px;display:grid;gap:5px}
+.say{display:grid;gap:14px}
+@media(min-width:640px){.say{grid-template-columns:1fr 1fr}}
+.say .card h3{font-size:22px;margin-bottom:8px}
+.say .no h3{color:var(--alert)}
+.say ul{margin:0;padding-inline-start:20px;display:grid;gap:7px}
+.quote{font-weight:500}
+.red{background:var(--alert-bg);border:1px solid var(--alert);border-radius:18px;padding:20px 22px}
+.red h2{color:var(--alert);border-color:var(--alert)}
+.red ul{margin:8px 0 0;padding-inline-start:22px;display:grid;gap:7px}
+.call{margin-top:14px;font-weight:700}
+footer{margin-top:40px;padding-top:16px;border-top:3px double var(--line);font-size:14px;color:var(--muted)}
+.sun{display:inline-block;width:.5em;height:.5em;border-radius:50%;background:var(--sun);margin-inline-start:.35em}
+h2{margin-top:36px}
+.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding-block:10px;z-index:2}
+.tools input{flex:1 1 200px;min-width:0;font:inherit;font-size:16px;padding:10px 18px;border:1.5px solid var(--sage);border-radius:999px;background:var(--card);color:var(--text)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chips button{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:3px 13px;cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:14px}
+.drug{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px 10px;min-width:0}
+.drug h3{font-weight:800;font-size:24px}
+.sci{font-size:13px;color:var(--muted);margin:3px 0 0;text-align:right;unicode-bidi:plaintext}
+.fam{margin:8px 0 0}.fam span{font-size:13px;color:var(--fg);border:1px solid var(--sage);border-radius:999px;padding:1px 12px}
+.eff h4{font-size:13px;color:var(--sun);margin:14px 0 2px;font-weight:700}
+.eff p{margin:0;font-size:16px;line-height:1.5}
+details{margin-top:12px;border-top:1px solid var(--line)}
+summary{cursor:pointer;font-size:15px;font-weight:700;color:var(--fg);padding-block:9px 6px}
+dl{margin:4px 0 6px;font-size:15px;line-height:1.5}dt{font-weight:700;color:var(--sun);margin-top:8px}dd{margin:0}
+.note{background:var(--card);border:1px dashed var(--sage);border-radius:14px;padding:10px 16px;font-size:15px;margin:0 0 14px}
+.none{display:none;padding:20px 0;color:var(--muted)}
+</style></head><body><div class="wrap"><a class="back" href="index.html">→ חזרה לדף הראשי</a>
+<div class="top"><h1>החומרים, בשמות שאתם מכירים</h1><div class="rule"></div></div>
+<p class="sub">מידע כללי על השפעות, סכנות ומקור. אין כאן מינונים ואין המלצה לשימוש: מינונים ואופני שימוש תמצאו בספר. לחצו על כרטיס כדי לראות מקור, מנגנון ושימושים.</p>
+<p class="note">הטבלה עלולה לכלול טעויות קטנות. מצאתם אחת? כתבו לנו ל-<span dir="ltr" style="user-select:all;font-weight:700">omrishalem1@gmail.com</span> ונתקן.</p>
+<div class="tools"><input id="q" type="search" placeholder="חיפוש: אקסטזי, קיי, אסיד, פטריות..." aria-label="חיפוש חומר">
+<div class="chips" id="chips" role="group" aria-label="סינון לפי משפחה"><button type="button" data-k="" aria-pressed="true">הכול</button><button type="button" data-k="stim" aria-pressed="false">ממריצים</button><button type="button" data-k="dep" aria-pressed="false">מדכאים</button><button type="button" data-k="opi" aria-pressed="false">אופיואידים</button><button type="button" data-k="can" aria-pressed="false">קנאביס</button><button type="button" data-k="psy" aria-pressed="false">פסיכדליים</button><button type="button" data-k="dis" aria-pressed="false">מנתקים</button><button type="button" data-k="emp" aria-pressed="false">אמפתוגנים</button><button type="button" data-k="del" aria-pressed="false">דליריאנטים</button></div></div>
+<div class="grid" id="grid"><article class="drug" data-f="dep" data-s="אלכוהול ethanol">
+<header><h3>אלכוהול</h3><p class="sci" dir="ltr">ethanol</p><p class="fam"><span>מדכא</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>ההשפעה מאוד תלויה במינון. יכולה לכלול: עירור, אופוריה, בטחון עצמי מוגבר, איטיות, כבדות, שיכחון, פגיעה ביכולת מוטורית וקוגניטיבית, בחילה והקאה, אובדן הכרה.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>תסיסה של סוכרים מפירות ומצמחים אחרים</dd><dt>איך זה פועל</dt><dd>במינונים נמוכים: מעורר את מערכת ה-GABA, מגביר את פעילות מערכת ה-dopamine, ועוד השפעות רבות. במינונים גבוהים: השפעות על מערכות של קולטנים רבים, נזק מבני לתאי הגוף.</dd><dt>שימושים והערות</dt><dd>בשימוש עממי באירופה לאורך לפחות 10,000 השנים האחרונות, וכמובן ברוב חלקי העולם בתקופות שונות.</dd></dl></details>
+</article><article class="drug" data-f="dep" data-s="ואליום, כדורי הרגעה diazepam (Valium) ובנזודיאזפינים אחרים">
+<header><h3>ואליום, כדורי הרגעה</h3><p class="sci" dir="ltr">diazepam (Valium) ובנזודיאזפינים אחרים</p><p class="fam"><span>מדכא</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>הרגעה, הרדמה, הפחתת חרדה, הפחתת פרכוסים, הרפיית שרירים, שיכחון, סחרחורת, חוסר קואורדינציה.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>סינתטי; הכנה במעבדה</dd><dt>איך זה פועל</dt><dd>מודולטור אלוסטרי חיובי (Positive Allosteric Modulator, PAM) לקולטני GABA<sub>A</sub>: מחזק את פעולת ה-GABA עליהם.</dd><dt>שימושים והערות</dt><dd>משנות ה-60 בשימוש רפואי רחב עבור מגוון תסמונות ואתגרים נפשיים. הפוטנציאל להתמכרות ולהשפעות שליליות הינו גבוה.</dd></dl></details>
+</article><article class="drug" data-f="dep" data-s="GHB (ג׳י) gamma-hydroxybutyrate">
+<header><h3>GHB (ג׳י)</h3><p class="sci" dir="ltr">gamma-hydroxybutyrate</p><p class="fam"><span>מדכא</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>להשפעות דמיון מסוים לאלכוהול. במינונים נכונים יוצר תחושות רוגע ונעימות, ויכול לשמש כעזר לשינה. חלון יעילותו צר: במינונים מעל הרצוי יכול לגרום לאפתיות, אובדן הכרה ומוות.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>הכנה במעבדה. גם חומר אנדוגני בבני אדם ובכל היונקים.</dd><dt>איך זה פועל</dt><dd>אגוניסט מלא (full agonist) לקולטן ה-GHB. אגוניסט חלקי לקולטני GABA<sub>B</sub>.</dd><dt>שימושים והערות</dt><dd>נגיש כתרופת מרשם להפרעות שינה. כבר עשרות שנים ידוע כאחד מ״סמי האונס״.</dd></dl></details>
+</article><article class="drug" data-f="stim" data-s="קפאין קפה, תה, משקאות אנרגיה">
+<header><h3>קפאין</h3><p class="sci" dir="ltr">קפה, תה, משקאות אנרגיה</p><p class="fam"><span>ממריץ</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>ערנות מוגברת, עירור כללי, אובדן תיאבון.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>קפה, צמח שמקורו כנראה באזור אתיופיה</dd><dt>איך זה פועל</dt><dd>אנטגוניסט תחרותי לקולטני אדנוזין (adenosine, A<sub>1</sub> ו-A<sub>2A</sub>), מערכת שמדכאת פעילות נוירלית באופן כללי.</dd><dt>שימושים והערות</dt><dd>הסם הלא מוגבל (חוקית) בשימוש מספר אחד (כמותית) בעולם המתועשם המודרני.</dd></dl></details>
+</article><article class="drug" data-f="stim" data-s="ניקוטין סיגריות, נרגילה, ווייפ">
+<header><h3>ניקוטין</h3><p class="sci" dir="ltr">סיגריות, נרגילה, ווייפ</p><p class="fam"><span>ממריץ</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>עירור, הגברת תהליכים קוגניטיביים, אובדן תיאבון.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>טבק, צמח שמקורו בדרום אמריקה</dd><dt>איך זה פועל</dt><dd>פעולות שונות (עירור ועיכוב) על מערכת הקולטנים nicotinic acetylcholine (nACh).</dd><dt>שימושים והערות</dt><dd>הצמח השמאני (ריפוי וכדומה) העיקרי עבור קבוצות ילידים בדרום אמריקה.</dd></dl></details>
+</article><article class="drug" data-f="opi" data-s="אופיום פרג">
+<header><h3>אופיום</h3><p class="sci" dir="ltr">פרג</p><p class="fam"><span>אופיואיד</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>אופוריה, שיכוך כאבים, הרגעה, ניתוק מהעולם החיצון, הרדמה.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>צמח הפרג, מקורו בהודו</dd><dt>איך זה פועל</dt><dd>מעורר את מערכת הקולטנים האופיואידים.</dd><dt>שימושים והערות</dt><dd>״אופיום״ הוא הנוזל שמפריש הפרג כשחותכים אותו. מכיל 10-15% מורפיום, וגם קודאין ואופיאטים אחרים. מורפיום הוא הסם הרפואי בשימוש מספר אחד (כמותית) בבתי חולים בכל העולם.</dd></dl></details>
+</article><article class="drug" data-f="opi" data-s="הרואין heroin (diacetylmorphine)">
+<header><h3>הרואין</h3><p class="sci" dir="ltr">heroin (diacetylmorphine)</p><p class="fam"><span>אופיואיד</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>אופוריה עזה, הרגעה, ניתוק. האטת נשימה, בחילה, תלות מהירה וחזקה. מנת יתר מסכנת חיים.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>מופק ממורפיום, שמקורו בצמח הפרג (חומר סינתטי למחצה)</dd><dt>איך זה פועל</dt><dd>אגוניסט לקולטנים האופיואידים (בעיקר μ). חודר למוח מהר ולכן פועל חזק ומהיר.</dd><dt>שימושים והערות</dt><dd>בעבר נמכר כתרופה נגד שיעול וכאב. היום אסור ברוב המדינות, ובחלקן משמש בהקשר רפואי מפוקח.</dd></dl></details>
+</article><article class="drug" data-f="can" data-s="קנאביס: גראס, חשיש, מריחואנה THC, CBD ועוד הרבה">
+<header><h3>קנאביס: גראס, חשיש, מריחואנה</h3><p class="sci" dir="ltr">THC, CBD ועוד הרבה</p><p class="fam"><span>קנאביס</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>אופוריה, שינוי בתחושת הגוף, שיכוך כאבים, כבדות, שינוי בחישת הזמן, חשיבה אסוציאטיבית מוגברת, בלבול פסיכולוגי, דחק, פרנויה, עזר לשינה.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>צמח שמקורו בהודו</dd><dt>איך זה פועל</dt><dd>לתרכובות השונות בצמח השפעות שונות על מערכת הקולטנים הקנבינואידיים (CB1 ו-CB2). השפעות על מערכות אחרות, כולל GABA ו-glycine.</dd><dt>שימושים והערות</dt><dd>שימוש פולחני/דתי בהודו. היום שימוש רפואי הולך ונרחב בכל העולם, עבור מגוון רחב של מחלות, תסמונות ואתגרים נפשיים.</dd></dl></details>
+</article><article class="drug" data-f="can" data-s="ספייס קנבינואידים סינתטיים">
+<header><h3>ספייס</h3><p class="sci" dir="ltr">קנבינואידים סינתטיים</p><p class="fam"><span>קנאביס סינתטי</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>חרדה חריפה, תסיסה, פרנויה, הזיות, דופק מהיר, פרכוסים, הקאות, לעיתים אשפוז. תוצאות לא צפויות.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>סינתטי; הכנה במעבדה, לרוב מרוסס על צמחים יבשים</dd><dt>איך זה פועל</dt><dd>אגוניסטים מלאים לקולטן CB1, לרוב חזקים בהרבה מ-THC.</dd><dt>שימושים והערות</dt><dd>אין שימוש רפואי. זה לא ״קנאביס״: מוצרים שונים מכילים חומרים שונים, ואי אפשר לדעת מה יש בהם.</dd></dl></details>
+</article><article class="drug" data-f="dis" data-s="גז צחוק N&lt;sub&gt;2&lt;/sub&gt;O, תחמוצת הדו-חנקן (לא להתבלבל עם NO)">
+<header><h3>גז צחוק</h3><p class="sci" dir="ltr">N<sub>2</sub>O, תחמוצת הדו-חנקן (לא להתבלבל עם NO)</p><p class="fam"><span>מנתק</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>אופוריה, שינוי חישה ודפוסי חשיבה, שיכוך כאבים, איטיות, הרדמה.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>סינתטי; הכנה במעבדה</dd><dt>איך זה פועל</dt><dd>אנטגוניזם לקולטני NMDA, ולפי מחקרים גם הגברת פעילות קולטני GABA<sub>A</sub> והשפעה על המערכת האופיואידית. המנגנון המלא אינו ידוע.</dd><dt>שימושים והערות</dt><dd>שימושים רפואיים שונים, כולל ברפואת שיניים, בלידה ובניתוחים קטנים, לצורך הרגעה, שיכוך כאבים והפחתת סבל.</dd></dl></details>
+</article><article class="drug" data-f="dis" data-s="קטמין (קיי) ketamine">
+<header><h3>קטמין (קיי)</h3><p class="sci" dir="ltr">ketamine</p><p class="fam"><span>מנתק</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>דיסוציאציה, שיכוך כאבים, אובדן יכולת מוטורית, ניתוק מהעולם החיצון, הרדמה, איבוד הכרה.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>סינתטי; הכנה במעבדה</dd><dt>איך זה פועל</dt><dd>אנטגוניסט לא-תחרותי לקולטני NMDA (קולטן יונוטרופי של glutamate).</dd><dt>שימושים והערות</dt><dd>שימוש רפואי קלאסי להרדמה, גם בווטרינריה. שימוש רפואי חדש ומתהווה לטיפול בדיכאון.</dd></dl></details>
+</article><article class="drug" data-f="stim" data-s="קוקאין (קוק, שלג) cocaine">
+<header><h3>קוקאין (קוק, שלג)</h3><p class="sci" dir="ltr">cocaine</p><p class="fam"><span>ממריץ</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>ערנות מוגברת, עירור כללי, אופוריה, גירוי מיני, אובדן תיאבון.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>קוקה, צמח במרכז ובדרום אמריקה</dd><dt>איך זה פועל</dt><dd>מעכב את הנשאים (transporters) מסוג monoamine (dopamine, serotonin ו-noradrenaline) ומונע ספיגה חוזרת (reuptake) של אותם מוליכים, ולכן מגביר את ריכוזם בסינפסות. פעולות רבות אחרות. השפעת ההרדמה המקומית על ידי חסימת תעלות Na<sup>+</sup> על ממברנות התאים.</dd><dt>שימושים והערות</dt><dd>שימוש מסורתי של עלי קוקה לאורך אלפי שנים על ידי חברות במרכז ודרום אמריקה (כולל ה-Inca). שימוש רפואי להרדמה מקומית בניתוחי שיניים ואף/אוזן/גרון.</dd></dl></details>
+</article><article class="drug" data-f="stim" data-s="אמפטמין (ספיד) amphetamine">
+<header><h3>אמפטמין (ספיד)</h3><p class="sci" dir="ltr">amphetamine</p><p class="fam"><span>ממריץ</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>ערנות מוגברת, עירור כללי, ריכוז מוגבר, אופוריה, גירוי מיני, אובדן תיאבון.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>סינתטי; הכנה במעבדה. תרכובות השייכות לקבוצת האמפטמינים נמצאות גם בזני צמחים מהסוג Ephedra.</dd><dt>איך זה פועל</dt><dd>פועל על הנשאים (transporters) מסוג monoamine כגון VMAT2, ובמיוחד משפיע על dopamine ו-noradrenaline. נכנס עם הנשא אל תוך התא הפרה-סינפטי וגורם לשחרור המוליך אל תוך הסינפסה. השפעות נוספות על מערכות קולטנים אחרות.</dd><dt>שימושים והערות</dt><dd>שימוש רפואי להפרעות קשב וריכוז, נרקולפסיה (נרדמות), ולהורדת משקל. בישראל נמכר כתרופת מרשם בשם אטנט.</dd></dl></details>
+</article><article class="drug" data-f="stim" data-s="ריטלין, אדרל methylphenidate, amphetamine salts">
+<header><h3>ריטלין, אדרל</h3><p class="sci" dir="ltr">methylphenidate, amphetamine salts</p><p class="fam"><span>ממריץ</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>ריכוז וערנות. בלי צורך רפואי, ובמינון לא מתאים: חרדה, נדודי שינה, דפיקות לב, ותלות.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>תרופות מרשם; הכנה במעבדה</dd><dt>איך זה פועל</dt><dd>ריטלין מעכב ספיגה חוזרת של dopamine ו-noradrenaline. אדרל הוא מלחי אמפטמין, ופועל כמו אמפטמין.</dd><dt>שימושים והערות</dt><dd>טיפול בהפרעות קשב וריכוז בהשגחת רופא. נפוץ גם בשימוש לא רפואי בתקופות לחץ ולימודים.</dd></dl></details>
+</article><article class="drug" data-f="stim" data-s="מת׳, קריסטל methamphetamine">
+<header><h3>מת׳, קריסטל</h3><p class="sci" dir="ltr">methamphetamine</p><p class="fam"><span>ממריץ</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>ערנות ואנרגיה עזות, אופוריה, ירידה בתיאבון, חוסר שינה. פגיעה בשיניים, פרנויה ופסיכוזה, ותלות חזקה.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>סינתטי; הכנה במעבדה</dd><dt>איך זה פועל</dt><dd>דומה לאמפטמין, אך חזק יותר ופועל ביתר עוצמה על dopamine (משחרר אותו ומעכב את הספיגה החוזרת שלו).</dd><dt>שימושים והערות</dt><dd>שימוש רפואי נדיר ומוגבל מאוד, בכמה מדינות בלבד.</dd></dl></details>
+</article><article class="drug" data-f="stim" data-s="קאת, גת cathinone">
+<header><h3>קאת, גת</h3><p class="sci" dir="ltr">cathinone</p><p class="fam"><span>ממריץ</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>ערנות מוגברת, עירור כללי, אופוריה, גירוי מיני, אובדן תיאבון.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>צמח במזרח התיכון ובמזרח אפריקה</dd><dt>איך זה פועל</dt><dd>פועל על הנשאים (transporters) מסוג monoamine כגון VMAT2, ובמיוחד משפיע על dopamine ו-noradrenaline. נכנס עם הנשא אל תוך התא הפרה-סינפטי וגורם לשחרור המוליך אל תוך הסינפסה.</dd><dt>שימושים והערות</dt><dd>שימוש עממי נרחב באותם אזורים בהם הצמח מצוי. ישנה משפחה של סמי cathinone סינתטיים, כמו 3-MMC ו-4-MMC (mephedrone).</dd></dl></details>
+</article><article class="drug" data-f="emp" data-s="אקסטזי, מולי, גלולות MDMA">
+<header><h3>אקסטזי, מולי, גלולות</h3><p class="sci" dir="ltr">MDMA</p><p class="fam"><span>אמפתוגן</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>Empathogen / entactogen: אופוריה, תחושות מוגברות של שייכות וחיבור חברתי, אמפטיה וחמלה, רצון מוגבר לתקשר, גירוי מיני, אובדן תיאבון.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>סינתטי; הכנה במעבדה</dd><dt>איך זה פועל</dt><dd>פועל על הנשאים (transporters) מסוג monoamine כגון VMAT2, ובמיוחד משפיע על serotonin. נכנס עם הנשא אל תוך התא הפרה-סינפטי וגורם לשחרור המוליך אל תוך הסינפסה. ליגנד לקולטני TAAR1. מעלה את ריכוז ההורמון oxytocin בדם.</dd><dt>שימושים והערות</dt><dd>שימוש רפואי חדש ומתהווה כעזר לטיפול בהפרעת פוסט טראומה (PTSD). MDMA הוא הסם הפעיל ב-ecstasy.</dd></dl></details>
+</article><article class="drug" data-f="psy" data-s="פטריות (שרומס) psilocybin">
+<header><h3>פטריות (שרומס)</h3><p class="sci" dir="ltr">psilocybin</p><p class="fam"><span>פסיכדלי</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>חוויה פסיכדלית קלאסית (אורך כ-4-6 שעות).</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>פטריות מסוגים Psilocybe ואחרים</dd><dt>איך זה פועל</dt><dd>אגוניסט חלקי (partial agonist) לתת-סוגי קולטני serotonin, כולל תת-הסוג "הפסיכדלי" הקלאסי, 5-HT2A. ה-psilocybin עובר בגוף המרה ל-psilocin, הוא החומר הפעיל.</dd><dt>שימושים והערות</dt><dd>שימוש שמאני מסורתי במרכז ודרום אמריקה (כולל ה-Maya וה-Aztec), ייתכן בעבר בחלקים אחרים בעולם. שימוש רפואי חדש ומתהווה לעזור לחולים סופניים בדרכם האחרונה, לטיפול בהתמכרות לסמים כמו אלכוהול, אופיואידים וטבק, לטיפול בדיכאון, ועוד הרבה.</dd></dl></details>
+</article><article class="drug" data-f="psy" data-s="DMT dimethyltryptamine">
+<header><h3>DMT</h3><p class="sci" dir="ltr">dimethyltryptamine</p><p class="fam"><span>פסיכדלי</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>חוויה פסיכדלית מובהקת, ואף יכולה להיות ייחודית בעוצמתה ותוכנה.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>צמחים רבים, במיוחד עצי שיטה. גם חומר אנדוגני בבני אדם ובכל היונקים.</dd><dt>איך זה פועל</dt><dd>אגוניסט חלקי (partial agonist) לתת-סוגי קולטני serotonin, כולל תת-הסוג "הפסיכדלי" הקלאסי, 5-HT2A.</dd><dt>שימושים והערות</dt><dd>שימוש שמאני מסורתי על ידי קבוצות ילידים באמזונס, באמצעות אבקות הסנפה המופקות מצמחים. אחד משני הפסיכואקטיביים הפעילים במשקה ayahuasca.</dd></dl></details>
+</article><article class="drug" data-f="psy" data-s="פיוטה, סאן פדרו mescaline">
+<header><h3>פיוטה, סאן פדרו</h3><p class="sci" dir="ltr">mescaline</p><p class="fam"><span>פסיכדלי</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>חוויה פסיכדלית קלאסית (אורך כ-12-14 שעות).</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>שני קבוצות של קקטוסים: מהסוג Trichocereus (לדוגמה san pedro), ומה-peyote. מקורן בדרום ובמרכז אמריקה.</dd><dt>איך זה פועל</dt><dd>אגוניסט חלקי (partial agonist) לתת-סוגי קולטני serotonin, כולל תת-הסוג "הפסיכדלי" הקלאסי, 5-HT2A. השפעות נוספות על מערכות קולטנים אחרות.</dd><dt>שימושים והערות</dt><dd>שימוש מסורתי על ידי קבוצות ילידים (כולל ה-Maya וה-Aztec) במרכז, ובאזורים ההרריים של דרום אמריקה.</dd></dl></details>
+</article><article class="drug" data-f="psy" data-s="2C-B 2C-B, DOx">
+<header><h3>2C-B</h3><p class="sci" dir="ltr">2C-B, DOx</p><p class="fam"><span>פסיכדלי</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>אפקטים ויזואליים בדומה ל-LSD, אמנם רכים יותר, ותכונות אמפתוגניות בדומה ל-MDMA, אופוריה. השפעות על חישת הריח והשמיעה.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>סינתטי; הכנה במעבדה</dd><dt>איך זה פועל</dt><dd>אגוניסט חלקי (partial agonist) לתת-סוגי קולטני serotonin, כולל תת-הסוג "הפסיכדלי" הקלאסי, 5-HT2A. זיקה לקולטנים אדרנרגיים (adrenergic) מסוימים.</dd><dt>שימושים והערות</dt><dd>Alexander Shulgin לראשונה סינתז וגילה את התכונות הפסיכואקטיביות של התרכובת. 2C-B ו-DOM הם חלק מקבוצה של שש תרכובות שכונו the Shulgin magical half-dozen.</dd></dl></details>
+</article><article class="drug" data-f="psy" data-s="NBOMe (נבומ, ״LSD״ מזויף) 25I-NBOMe">
+<header><h3>NBOMe (נבומ, ״LSD״ מזויף)</h3><p class="sci" dir="ltr">25I-NBOMe</p><p class="fam"><span>פסיכדלי, מסוכן במיוחד</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>חוויה פסיכדלית בדומה ל-LSD, עם דיווחים גם על נטייה ליצירת חרדה, פרנויה, בלבול ופאניקה.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>סינתטי; הכנה במעבדה</dd><dt>איך זה פועל</dt><dd>אגוניסט מלא (full agonist) לתת-סוג קולטן serotonin 5-HT2A, במינונים זעירים. במינונים גבוהים יותר נקשר גם למטרות נוספות, במערכת ה-5-HT ובמערכות אחרות.</dd><dt>שימושים והערות</dt><dd>פותח ב-2003 כאמצעי בדיקה מולקולרית במעבדה למערכת ה-serotonin. מ-2012 דיווחים על הרעלות, חלקם שהסתיימו במוות, בעיקר של נוטלים במסיבות. החלון התרפי, בין היעדר אפקט לבין השפעות שליליות ואף מסוכנות, צר מאוד. לעיתים נמכר כ-״LSD״, ומכאן נסיבות ההרעלות. טעמו של הסם מר במיוחד.</dd></dl></details>
+</article><article class="drug" data-f="psy" data-s="LSD (אסיד, בולים) lysergic acid diethylamide">
+<header><h3>LSD (אסיד, בולים)</h3><p class="sci" dir="ltr">lysergic acid diethylamide</p><p class="fam"><span>פסיכדלי</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>חוויה פסיכדלית קלאסית (אורך כ-8-10 שעות).</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>הכנה במעבדה, מתרכובות הקשורות לפטריית ה-ergot שצומחת על חיטה, שיפון ומינים דומים</dd><dt>איך זה פועל</dt><dd>אגוניסט חלקי (partial agonist) לתת-סוגי קולטני serotonin, כולל תת-הסוג "הפסיכדלי" הקלאסי, 5-HT2A. השפעות נוספות על מערכות קולטנים אחרות.</dd><dt>שימושים והערות</dt><dd>שימוש רפואי חדש ומתהווה לעזור לחולים סופניים בדרכם האחרונה, לטיפול בהתמכרות לסמים, לטיפול בדיכאון, ועוד הרבה.</dd></dl></details>
+</article><article class="drug" data-f="psy" data-s="איוואסקה ayahuasca; MAOIs: harmine, harmaline">
+<header><h3>איוואסקה</h3><p class="sci" dir="ltr">ayahuasca; MAOIs: harmine, harmaline</p><p class="fam"><span>פסיכדלי</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>ל-MAOIs לבדם השפעה פסיכדלית ״קלה״. בשילוב עם DMT, כמו במשקה ה-ayahuasca, נוצרת חוויה פסיכדלית מובהקת ועוצמתית. אובדן יכולת מוטורית, בחילה והקאה.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>ayahuasca, צמח מטפס השייך לאמזונס. Peganum harmala (חרמל, שבר לבן) ועוד.</dd><dt>איך זה פועל</dt><dd>מעכב את האנזים monoamine oxidase, בקיבה, בכבד ובמערכת העצבים המרכזית (CNS), ומאפשר ל-monoamines אקסוגניים כמו DMT להגיע לסינפסות, ומגביר את הריכוז של monoamines אנדוגניים.</dd><dt>שימושים והערות</dt><dd>ביחד עם צמח המכיל DMT, מופק המשקה הפסיכדלי באותו השם, ayahuasca. בשימוש מסורתי על ידי קבוצות ילידים באמזונס. התפשט בעשורים האחרונים לכל חלקי העולם המערבי, לשימוש בטקסי חוויה וטיפול רוחני/נפשי.</dd></dl></details>
+</article><article class="drug" data-f="del" data-s="דטורה, ״צמחי הכישוף״ tropane alkaloids: atropine, scopolamine">
+<header><h3>דטורה, ״צמחי הכישוף״</h3><p class="sci" dir="ltr">tropane alkaloids: atropine, scopolamine</p><p class="fam"><span>דליריאנט</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>הזיות, אשליות (הזיות הנחוות כאמיתיות, true deliria), דיסאוריינטציה (ניתוק ובלבול) קיצונית, שיכחון ועוד. במינונים יותר גבוהים: מוות.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>צמחי משפחת ה-Solanaceae, הנמצאים בחלקים שונים של העולם. לדוגמה: שכרון, סולנום, דודא.</dd><dt>איך זה פועל</dt><dd>אנטגוניסטים של מערכת הקולטנים muscarinic acetylcholine (mACh).</dd><dt>שימושים והערות</dt><dd>״צמחי הכישוף״ המסורתיים והאגדתיים של אירופה. בשימוש שמאני מסורתי גם על ידי קבוצות באמזונס, כולל בשילוב עם ayahuasca.</dd></dl></details>
+</article><article class="drug" data-f="psy" data-s="איבוגאין (איבוגה) ibogaine">
+<header><h3>איבוגאין (איבוגה)</h3><p class="sci" dir="ltr">ibogaine</p><p class="fam"><span>פסיכדלי</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>חוויה פסיכדלית ייחודית, ארוכה (עד 24 שעות), עם תוכן הקשור לעיתים קרובות לזיכרונות והיסטוריה אישית. אובדן יכולת מוטורית, בחילה והקאה.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>Tabernanthe iboga, צמח שמקורו במערב אפריקה</dd><dt>איך זה פועל</dt><dd>השפעות על מערכות של קולטנים רבים, כולל קולטני serotonin ואופיואידים.</dd><dt>שימושים והערות</dt><dd>שימוש שמאני מסורתי על ידי קבוצות ילידים באזור Gabon וה-Congo. שימוש רפואי חדש ומתהווה לטיפול בהתמכרות לסמים כמו אלכוהול ואופיואידים.</dd></dl></details>
+</article><article class="drug" data-f="psy" data-s="סלוויה Salvia divinorum, salvinorin A">
+<header><h3>סלוויה</h3><p class="sci" dir="ltr">Salvia divinorum, salvinorin A</p><p class="fam"><span>פסיכדלי</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>השפעה ייחודית, פסיכדלית בחלקה, מאוד תלויה במינון. שינוי דרסטי בתחושת הגוף והמרחב, כבדות, אפקטים ויזואליים, תוכן פסיכדלי.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>צמח שמקורו במדינת Oaxaca שבמקסיקו</dd><dt>איך זה פועל</dt><dd>השפעה אגוניסטית סלקטיבית מאוד על תת-סוג של קולטן אופיואידי, ה-κ (kappa)-opioid. כנראה גם השפעה אגוניסטית (מגבירה) על מערכת ה-dopamine.</dd><dt>שימושים והערות</dt><dd>שימוש שמאני מסורתי על ידי קבוצת הילידים ה-Mazatec ב-Oaxaca.</dd></dl></details>
+</article><article class="drug" data-f="dis del" data-s="פטריית זבובנית (אמניטה) Amanita muscaria: ibotenic acid, muscimol">
+<header><h3>פטריית זבובנית (אמניטה)</h3><p class="sci" dir="ltr">Amanita muscaria: ibotenic acid, muscimol</p><p class="fam"><span>מנתק/דליריאנט</span></p></header>
+<div class="eff"><h4>השפעות ותופעות אפשריות</h4><p>הרדמה/ניתוק, בלבול, אשליות והזיות, אופוריה, תשישות, הזיעה, עליה בטמפרטורת הגוף, פרכוסי שרירים ועוד.</p></div>
+<details><summary>מקור, פרמקולוגיה ושימושים</summary>
+<dl><dt>מקור</dt><dd>פטריית הזבובנית, האדומה/צהובה עם נקודות לבנות הקלאסית</dd><dt>איך זה פועל</dt><dd>muscimol: אגוניסט סלקטיבי לקולטני GABA<sub>A</sub> (עיקר ההשפעה). ibotenic acid: אגוניסט לקולטני glutamate (NMDA ועוד), ובגוף עובר חלקית ל-muscimol.</dd><dt>שימושים והערות</dt><dd>שימוש שמאני מסורתי באזור סיביר ופינלנד.</dd></dl></details>
+</article></div>
+<p class="none" id="none">לא נמצא חומר בשם הזה. נסו שם אחר או הסירו את הסינון.</p>
+<footer><p>מוגש כשירות מעמרי שלם במטרה למזער נזקים בשימוש בסמים. במידה ונמצאו טעויות במידע ניתן לפנות במייל <span dir="ltr" style="user-select:all;font-weight:700">omrishalem1@gmail.com</span></p>
+<p>המידע כללי, לא ייעוץ רפואי, ולא המלצה לשימוש. מבוסס על ״טבלת סיכום לסוגי הסמים הפסיכואקטיביים העיקריים״ (עדכון 4), המכללה האקדמית תל-חי, ועובדה והורחבה להרצאה.</p></footer></div><script>
+(function(){
+var cards=[].slice.call(document.querySelectorAll('.drug'));
+var q=document.getElementById('q'), none=document.getElementById('none');
+var chips=[].slice.call(document.querySelectorAll('#chips button'));
+var cur='';
+function apply(){
+  var t=(q.value||'').trim().toLowerCase(), n=0;
+  cards.forEach(function(c){
+    var okF=!cur||(' '+c.dataset.f+' ').indexOf(' '+cur+' ')>-1;
+    var okS=!t||c.dataset.s.toLowerCase().indexOf(t)>-1;
+    var show=okF&&okS; c.hidden=!show; if(show)n++;
+  });
+  none.style.display=n?'none':'block';
+}
+q.addEventListener('input',apply);
+chips.forEach(function(b){b.addEventListener('click',function(){
+  cur=b.dataset.k; chips.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')}); apply();
+});});
+})();
+</script></body></html>

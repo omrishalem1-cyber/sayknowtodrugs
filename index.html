@@ -1,0 +1,127 @@
+<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>say know to drugs!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap"><style>
+:root{--bg:#F7ECD7;--card:#FBF4E4;--fg:#27553F;--text:#3B3A30;--muted:#6C6A58;--line:#E2D2B2;--sage:#8DAE88;--sun:#E8962E;--alert:#B5502E;--alert-bg:#F6DFCB;--font:'Heebo','Arial Hebrew',Arial,sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1A2A22;--card:#233629;--fg:#B9D9B0;--text:#E8DFC6;--muted:#A9B59F;--line:#37503F;--sage:#6F9A72;--alert:#F0A27F;--alert-bg:#3B2A20;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1A2A22;--card:#233629;--fg:#B9D9B0;--text:#E8DFC6;--muted:#A9B59F;--line:#37503F;--sage:#6F9A72;--alert:#F0A27F;--alert-bg:#3B2A20;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:18px;line-height:1.65;direction:rtl;padding-inline:16px;padding-block:0 56px;margin:0}
+.wrap{max-width:820px;margin-inline:auto}
+a{color:inherit}
+a:focus-visible,summary:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+h1,h2,h3{font-family:var(--font);margin:0;text-wrap:balance;color:var(--fg);line-height:1.15}
+h2{font-weight:800;font-size:clamp(28px,6vw,38px);padding-bottom:12px;margin-bottom:20px;border-bottom:3px double var(--line)}
+.sub{color:var(--muted);margin:-6px 0 20px;max-width:36em}
+section{padding-block:44px 0;scroll-margin-top:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
+
+.hero{margin-inline:-16px;position:relative;min-height:min(86vh,640px);background:#F7ECD7 url(hero.jpg) 28% 100%/cover no-repeat;display:flex;align-items:flex-start;border-bottom:1px solid var(--line)}
+:root[data-theme="dark"] .hero{filter:brightness(.78)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .hero{filter:brightness(.78)}}
+.hero .in{position:relative;z-index:1;width:100%;max-width:820px;margin-inline:auto;padding:40px 16px}
+.hero .in>*{max-width:min(20em,100%)}
+.hero .kicker,.hero .lead{color:#3B3A30}
+.hero h1{color:#27553F}
+.kicker{font-size:14px;letter-spacing:.06em;color:var(--muted);margin:0 0 6px}
+h1{font-weight:800;font-size:clamp(34px,9.5vw,64px);direction:ltr;text-align:right;line-height:1.05}
+.rule{height:3px;border-block:1px solid var(--line);border-bottom:0;background:var(--line);height:2px;margin:18px 0;width:100%}
+.lead{font-size:clamp(17px,4vw,20px);margin:0}
+nav.jump{display:flex;gap:8px;flex-wrap:wrap;margin-block:22px 0}
+nav.jump a{font-size:15px;text-decoration:none;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 16px}
+nav.jump a:hover{border-color:var(--sage)}
+.deck{display:grid;gap:14px;counter-reset:p}
+.pc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:start}
+.pc .num{grid-row:1/4;width:46px;height:46px;border-radius:50%;border:2px solid var(--sage);color:var(--fg);display:grid;place-items:center;font-weight:800;font-size:20px;margin-top:2px}
+.pc h3{font-weight:800;font-size:clamp(23px,5.5vw,30px)}
+.pc h3 small{font-weight:400;font-size:.62em;color:var(--muted);margin-inline-start:.4em}
+.pc .big{font-size:clamp(19px,4.4vw,22px);font-weight:500;line-height:1.4;margin:6px 0 0;color:var(--text)}
+.pc p{margin:4px 0 0;grid-column:2}
+.pc p.big{grid-column:2}
+.pc .num{grid-column:1}
+.sun{display:inline-block;width:.5em;height:.5em;border-radius:50%;background:var(--sun);margin-inline-start:.35em}
+.banner{display:block;width:100%;height:200px;object-fit:cover;border-radius:18px;margin-bottom:18px}
+.tile{display:grid;grid-template-columns:1fr;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:border-color .15s,transform .15s}
+.tile:hover{border-color:var(--sage);transform:translateY(-2px)}
+.tile .img{height:140px;background-size:cover;background-position:center}
+.tile .t{padding:16px 22px 20px}
+.tile strong{display:block;font-size:clamp(22px,5.5vw,28px);font-weight:800;color:var(--fg);line-height:1.2}
+.tile span{display:block;margin-top:4px}
+.tile .go{margin-top:8px;color:var(--sun);font-weight:700;font-size:16px}
+.stack{display:grid;gap:14px}
+.links{display:grid;gap:12px}
+.link{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 22px;transition:border-color .15s}
+.link:hover{border-color:var(--sage)}
+.link strong{display:block;color:var(--fg);font-size:clamp(21px,5vw,25px);font-weight:800;line-height:1.2}
+.link span{display:block;font-size:16px;margin-top:4px}
+.link .url{direction:ltr;text-align:right;font-size:14px;color:var(--sun);font-weight:700;margin-top:8px}
+.warn{background:var(--alert-bg);border:1px solid var(--alert);border-radius:18px;padding:20px 22px}
+.warn h3{color:var(--alert);font-size:clamp(22px,5vw,28px);font-weight:800;margin-bottom:6px}
+.warn p{margin:0 0 6px}
+.help{margin-top:14px}
+.help p{margin:0 0 6px}
+.eran{font-weight:800;font-size:32px;color:var(--fg)}
+footer{margin-top:44px;padding-top:16px;border-top:3px double var(--line);font-size:14px;color:var(--muted)}
+footer p{margin:0 0 8px;max-width:42em}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tile,.link{transition:none}}
+</style></head><body>
+<header class="hero"><div class="in">
+<h1>say know<br>to drugs!</h1>
+<div class="rule"></div>
+<p class="lead">ידע לפני בחירה. עקרונות, טבלת חומרים, מה עושים בטריפ קשה ומקורות לקרוא. הלמידה והקריאה כבר באחריותכם!</p>
+</div></header>
+<div class="wrap">
+<nav class="jump" aria-label="ניווט בדף"><a href="#principles">עקרונות</a><a href="badtrip.html">טריפ קשה</a><a href="table.html">טבלת חומרים</a><a href="#sources">חומרי קריאה חשובים נוספים</a><a href="#help">עזרה</a></nav>
+
+<section id="principles">
+<h2>עקרונות למזעור נזקים<span class="sun"></span></h2>
+<p class="sub">עולם הסמים מורכב וכולל סיכונים. אם בוחרים להשתמש, קבלת אחריות מתחילה בהכרת העקרונות הבסיסיים.</p>
+<div class="deck">
+<div class="pc"><span class="num">1</span><h3>Set &amp; Setting <small>(הנפש והסביבה)</small></h3>
+<p class="big">לצרוך רק במצב נפשי יציב, בסביבה בטוחה, ועם אנשים שסומכים עליהם.</p>
+<p>ההקשר הנפשי והסביבתי מכריע את אופי החוויה.</p></div>
+<div class="pc"><span class="num">2</span><h3>ניהול חרדה בזמן אמת</h3>
+<p class="big">להאט נשימות, לשנות מרחב למקום שקט, ולא להיאבק בחוויה.</p>
+<p>לזכור שזו השפעה כימית זמנית שמתפוגגת עם הזמן.</p></div>
+<div class="pc"><span class="num">3</span><h3>בדיקת החומר <small>(Drug Checking)</small></h3>
+<p class="big">חומר מהרחוב אינו צפוי.</p>
+<p>בדיקה בערכה ביתית או בעמדת מעבדה בפסטיבל מפחיתה דרמטית סיכוני הרעלה וחומרים לא מוכרים.</p></div>
+<div class="pc"><span class="num">4</span><h3>הפרדת חומרים <small>(ללא ערבובים)</small></h3>
+<p class="big">שילוב חומרים, ובמיוחד עם אלכוהול, מכפיל ואף משלש את הסיכון.</p>
+<p>הסיכון הוא לקריסה פיזיולוגית ולמצבי קיצון נפשיים לא מבוקרים.</p></div>
+<div class="pc"><span class="num">5</span><h3>מודעות לתלות</h3>
+<p><strong>תלות פיזיולוגית:</strong> עלייה מתמדת בסבילות (צורך במינון גבוה יותר) והופעת תסמיני גמילה פיזיים בעת הפסקה.</p>
+<p><strong>תלות פסיכולוגית:</strong> הפיכת החומר לכלי בלעדי לוויסות רגש, התמודדות עם מתח, חרדה או תפקוד חברתי יומיומי.</p></div>
+</div>
+</section>
+
+<section id="more">
+<h2>עוד בפנים<span class="sun"></span></h2>
+<div class="stack">
+<a class="tile" href="badtrip.html"><div class="img" style="background-image:url(trail.jpg)"></div><div class="t"><strong>טריפ קשה: מה עושים כדי לעזור</strong><span>פרוטוקול צעד אחר צעד: מה לעשות בשטח, מה להגיד ומה לא, ומתי מזעיקים עזרה רפואית.</span><div class="go">לפרוטוקול ←</div></div></a>
+<a class="tile" href="table.html"><div class="img" style="background-image:url(banner.jpg)"></div><div class="t"><strong>טבלת חומרים</strong><span>החומרים בשמות שאתם מכירים: אקסטזי, קיי, אסיד, פטריות ועוד. חיפוש, סינון והסבר לכל חומר.</span><div class="go">לטבלה ←</div></div></a>
+</div>
+</section>
+
+<section id="sources">
+<h2>חומרי קריאה חשובים נוספים<span class="sun"></span></h2>
+<p class="sub">מקורות מידע אמינים שכוללים מידע פרקטי ונגיש.</p>
+<div class="links">
+<a class="link" href="https://tripsit.me" target="_blank" rel="noopener"><strong>TripSit</strong><span>אתר מידע בינלאומי על חומרים. לכל חומר יש דף פשוט: איך הוא משפיע, מה הסיכונים, מה אסור לשלב איתו ומה לעשות כשמשהו משתבש. יש גם טבלת שילובים. באנגלית.</span><span class="url">tripsit.me</span></a>
+<a class="link" href="https://www.e-vrit.co.il/product/40410/%D7%9E%D7%92%D7%93%D7%99%D7%A8_%D7%A1%D7%9E%D7%99%D7%9D" target="_blank" rel="noopener"><strong>מגדיר סמים, ספר דיגיטלי</strong><span>ד״ר איתמר כהן, פסיכולוג קליני שחוקר פסיכדליה. המדריך המדעי הראשון בעברית על חומרים משני תודעה: מה הם עושים, מה הסיכונים, מה היתרונות האפשריים ותופעות הלוואי, בלי הפחדה ובלי עידוד שימוש. כולל הסברים על מינונים ואופני שימוש, והוא הספר הכי פרקטי ונוח למי שבוחר להשתמש. נקרא בטלפון, בתשלום, באתר עברית.</span><span class="url">e-vrit.co.il</span></a>
+<a class="link" href="https://radical.org.il/product/fieldguide/" target="_blank" rel="noopener"><strong>מגדיר סמים, ספר מודפס</strong><span>אותו ספר, על נייר, בהוצאת רדיקל, עם המינונים ואופני השימוש. מתאים למי שמעדיף לדפדף ולהחזיק אותו בבית. בתשלום.</span><span class="url">radical.org.il</span></a>
+<a class="link" href="https://hamakom.ngo" target="_blank" rel="noopener"><strong>המקום</strong><span>עמותה שמסייעת למטיילים ישראלים כשקשה: משבר נפשי, חוויה קשה אחרי חומרים, או סתם הרגשה שאבדתם את הדרך. שיחה עם עובדים סוציאליים דוברי עברית, מרחב פתוח לשבת בו וקבוצות, בחינם. יש מרכזים בדרמסלה (באביב ובקיץ), בגואה (בארמבול, בחורף) ובקופנגן שבתאילנד (פיילוט שהחל בספטמבר 2026).</span><span class="url">hamakom.ngo</span></a>
+</div>
+</section>
+
+<section id="help">
+<h2>אם משהו משתבש<span class="sun"></span></h2>
+<div class="warn"><h3>מישהו לא מגיב, לא נושם טוב או מאבד הכרה</h3>
+<p>מתקשרים מיד למספר החירום המקומי. לא מחכים שזה יעבור, ולא נבהלים ממה שיגידו אחר כך. נשארים איתו, מניחים אותו על הצד, ואומרים בכנות מה נלקח.</p>
+<p>112 הוא מספר החירום באירופה ובהודו. בדקו מראש את המספר במדינה שבה אתם מטיילים.</p></div>
+</section>
+
+<footer>
+<p>מוגש כשירות מעמרי שלם במטרה למזער נזקים בשימוש בסמים. במידה ונמצאו טעויות במידע ניתן לפנות במייל <span dir="ltr" style="user-select:all;font-weight:700">omrishalem1@gmail.com</span></p>
+<p>המידע כללי, לא ייעוץ רפואי, ולא המלצה לשימוש. החזקה ושימוש בסמים אסורים בחוק במדינות רבות, ובחלק מהמקומות העונש חמור.</p>
+</footer>
+</div>
+</body></html>
